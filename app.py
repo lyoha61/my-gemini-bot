@@ -20,7 +20,7 @@ GEMINI_KEY = os.environ.get("GEMINI_KEY")
 
 # 3. Настройка Gemini
 genai.configure(api_key=GEMINI_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('models/gemini-1.5-flash-latest')
 
 # 4. Инициализация бота по стандартам aiogram 3.7+
 # Теперь настройки передаются через DefaultBotProperties
